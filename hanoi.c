@@ -143,6 +143,9 @@ int main(int argc, char* argv[]) {
                 break;
         }
     }
+    stackDelete(A);
+    stackDelete(B);
+    stackDelete(C);
     return 0;
 }
 
