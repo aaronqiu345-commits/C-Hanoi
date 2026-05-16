@@ -44,8 +44,8 @@ void stackPush(Stack *s, int item) {
         printf("Stack full; can't push\n");
         return;
     }
-
-    s->items[++s->top] = item;
+    s++;
+    s->items[s->top] = item;
 }
 
 int stackPeek(Stack *s) {
